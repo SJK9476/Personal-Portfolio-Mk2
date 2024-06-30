@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --background-color: #1B1B1E;
+  --text-color: #fffbfc;
+  --primary-accent: #59c9a5;
+  --secondary-accent: #ef6f6c;
+
+  --ff-main: 'Raleway', sans-serif;
+  --ff-title: 'Urbanist', sans-serif;
+  --ff-sub-title: 'Poppins', sans-serif;
+
+  --fw-title: 700;
+  --fw-sub-title: 600;
+}
+
 /* Box sizing rules */
 *,
 *::before,
