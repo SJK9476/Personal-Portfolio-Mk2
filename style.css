@@ -320,3 +320,31 @@ body {
   }
 }
 
+.featured {
+  padding: 3rem;
+}
+
+.callout h2 {
+  font-family: var(--ff-title);
+  font-size: 4.5rem;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+
+.callout p {
+  font-family: var(--ff-sub-title);
+  font-size: 1.5rem;
+  text-wrap: wrap;
+  max-width: 50%;
+}
+
+@media screen and (max-width: 1250px) {
+  .callout {
+    text-align: center;
+  }
+
+  .callout p {
+    max-width: 100%;
+  }
+}
+
