@@ -322,6 +322,11 @@ body {
 
 .featured {
   padding: 3rem;
+  
+}
+
+.callout {
+  margin-bottom: 4rem;
 }
 
 .callout h2 {
@@ -348,3 +353,106 @@ body {
   }
 }
 
+.featured-card {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  margin-bottom: 2rem;
+  min-height: 600px;
+}
+
+.thumbnail {
+  display: flex;
+  border-radius: 20px;
+  margin: 0 auto;
+  background-color: black;
+  align-items: center;
+
+}
+
+.thumbnail img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.card-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.card-summary h3 {
+  font-family: var(--ff-sub-title);
+  font-weight: 400;
+  font-size: 1.825rem;
+}
+
+.card-summary p {
+  font-family: var(--ff-main);
+  font-size: 1.25rem;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-info h4 {
+  font-family: var(--ff-sub-title);
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.project-info h5 {
+  font-family: var(--ff-sub-title);
+  font-weight: 600;
+  font-size: 1.375rem;
+}
+
+.year-info {
+  border-top: solid 1px #fffbfc;
+}
+
+.year-info, .role-info {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: #fffbfc 1px solid;
+}
+
+.project-info p {
+  font-size: 1.5rem;
+}
+
+.project-links a {
+  color: var(--primary-accent);
+  font-size: 1.125rem;
+}
+
+.project-links a:hover {
+  color: var(--secondary-accent);
+  transition: 0.3s ease all;
+  & i {
+    color: var(--secondary-accent);
+    transition: 0.3s ease all;
+  }
+}
+
+.project-links .fa-brands {
+  font-size: 1.125rem;
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 1076px) {
+  .card-summary {
+    background-color: black;
+    padding: 2rem;
+    border-radius: 20px;
+  }
+
+  .thumbnail img {
+    border-radius: 20px;
+  }
+}
