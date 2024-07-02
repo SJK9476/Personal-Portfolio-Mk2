@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 :root {
   --background-color: #1B1B1E;
   --text-color: #fffbfc;
   --primary-accent: #59c9a5;
-  --secondary-accent: #ef6f6c;
+  --secondary-accent: #7F7979;
 
   --ff-main: 'Raleway', sans-serif;
-  --ff-title: 'Urbanist', sans-serif;
+  --ff-title: 'Bebas Neue', sans-serif;
   --ff-sub-title: 'Poppins', sans-serif;
 
   --fw-title: 700;
@@ -133,8 +135,188 @@ body {
 }
 
 .navigation a:hover {
-  color: var(--secondary-accent);
+  color: var(--primary-accent);
   transition: 0.3s ease all;
 }
 
+.top-nav .fa-solid {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.menu-burger {
+  display: none;
+  color: var(--primary-accent);
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.dd-navigation {
+  list-style-type: none;
+  text-align: center;
+  font-size: 3rem;
+  font-family: var(--ff-sub-title);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.dd-navigation.hidden {
+  display: none;
+}
+
+.dd-navigation li {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.dd-navigation li:hover {
+  color: var(--primary-accent);
+  transition: 0.3s ease all;
+}
+
+.dd-navigation a {
+  text-decoration: none;
+  
+}
+
+@media screen and (max-width: 800px) {
+  .menu-burger {
+    display: block;
+  }
+
+  .top-nav ul {
+    display: none;
+  }
+}
+
+.hero-text h1 {
+  font-family: var(--ff-title);
+  font-size: 100px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.hero-text p {
+  font-family: var(--ff-sub-title);
+  font-size: 1.5rem;
+  text-wrap: balance;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.hero-buttons .primary-button:active:hover {
+  background-color: black;
+  color: var(--text-color);
+  transition: 0.1s ease all;
+}
+
+.primary-button {
+  font-size: 1.5rem;
+  font-weight: var(--fw-sub-title);
+  padding: 10px 24px;
+  background-color: var(--secondary-accent);
+  color: var(--text-color);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+.primary-button i {
+  margin-left: 1rem;
+}
+  
+.primary-button:hover {
+  background-color: var(--primary-accent);
+  color: var(--text-color);
+
+  & i {
+    transform: rotate(-45deg);
+    transition: 0.3s ease;
+  }
+}
+
+
+.secondary-button {
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  padding: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+.secondary-button:hover {
+  background-color: var(--primary-accent);
+  & i {
+    color: black;
+  }
+}
+
+.fa-brands {
+  color: var(--primary-accent);
+  font-size: 2.5rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-inline: 2rem;
+  border-bottom: 2px solid #484848;
+  padding-bottom: 3rem;
+}
+
+.left-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-left: 2rem;
+}
+
+.left-hero h1 {
+  text-wrap: wrap;
+}
+
+.right-hero {
+  display: flex;
+  justify-content: center;
+}
+
+.right-hero img {
+  border-radius: 20px;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1250px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .left-hero {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .right-hero img {
+    min-width: 340px;
+    margin: 0 auto;
+  }
+}
 
