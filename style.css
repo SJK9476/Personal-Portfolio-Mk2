@@ -232,7 +232,6 @@ body {
 }
 
 .primary-button {
-  font-size: 1.5rem;
   font-weight: var(--fw-sub-title);
   padding: 10px 24px;
   background-color: var(--secondary-accent);
@@ -287,7 +286,11 @@ body {
   }
 }
 
-.fa-brands {
+.hero-buttons .primary-button {
+  font-size: 1.5rem;
+}
+
+.hero-buttons .fa-brands {
   color: var(--primary-accent);
   font-size: 2.5rem;
 }
@@ -554,3 +557,95 @@ body {
   padding: 1rem;
 }
 
+main {
+  padding : 3rem;
+}
+
+.about-hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+.about-hero h3 {
+  font-family: var(--ff-sub-title);
+  font-weight: 500;
+  font-size: 1.425rem;
+  line-height: 2rem;
+  text-wrap: pretty;
+}
+
+.about-hero p {
+  font-family: var(--ff-main);
+  font-size: 1.125rem;
+  text-wrap: pretty;
+  margin-bottom: 1rem
+}
+
+.about-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.about-buttons .primary-button {
+  font-size: 1.25rem;
+}
+
+.about-buttons .fa-brands {
+  color: var(--primary-accent);
+  font-size: 1.25rem;
+}
+
+.self-portrait img {
+  border-radius: 20px;
+  width: 80%;
+  object-fit: cover;
+  margin: 10rem auto;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+.skills .big-title {
+  font-size: 5rem;
+}
+
+.skills p {
+  font-family: var(--ff-main);
+  font-size: 1.5rem;
+  text-wrap: pretty;
+  margin-bottom: 1rem
+}
+
+.skill-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.skills button {
+  font-family: var(--ff-sub-title);
+  font-size: 1.375rem;
+  padding: .5rem 1rem;
+  background-color: var(--secondary-accent);
+  color: var(--text-color);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s ease all
+}
+
+@media screen and (max-wdith: 1025px) {
+  .skills {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
